@@ -9,6 +9,8 @@ spec:
     providerKind: github
     repositories:
     - name: http-golang-project
+    - name: jenkins-x-lab
+      scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
