@@ -14,18 +14,23 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.106.136.102
   environments:
   - key: dev
+    owner: jenkins-x-bot-lab
+    repository: jenkins-x-lab
   - key: staging
   - key: production
   ingress:
     domain: ""
-    externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jenkins-x-bot-lab
   repository: bucketrepo
   secretStorage: local
   vault: {}
