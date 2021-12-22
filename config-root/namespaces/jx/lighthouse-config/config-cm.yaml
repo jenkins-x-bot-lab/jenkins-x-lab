@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - jenkins-x-bot-lab/jenkins-x-lab
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.192.168.50.67.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
